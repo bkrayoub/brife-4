@@ -12,12 +12,13 @@ class myController extends Controller
         return response()->json($data);
     }
     
-    public function insert(Request $request){
+    public function insert(Request $req){
         $data = new myModel;
-        $data->name = $request->name;
+        $data->name = $req->name;
         $data->save();
         return response()->json($data);
     }
+
     public function delete($id){
         $data = myModel::find($id);
         $data->delete();
@@ -29,9 +30,9 @@ class myController extends Controller
         return response()->json($data);
     }
 
-    public function update(Request $request,$id){
+    public function update(Request $req ,$id){
         $data = myModel::find($id);
-        $data->name = $request->name;
+        $data->name = $req->name;
         $data->save();
         return $data;
     }

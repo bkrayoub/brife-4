@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\myController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -17,3 +18,10 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+Route::post('insert', [myController::class , 'insert']);
+
+Route::get('select', [myController::class , 'select']);
+
+Route::delete('delete/{id}', [myController::class , 'delete']);
+
+Route::post('update/{id}', [myController::class , 'update']);
