@@ -1,0 +1,130 @@
+.briefContainer{
+    padding: 20px;
+    max-width: 960px;
+    margin: 20px 10px auto 40px;
+}
+
+.addBriefButton{
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 30px;
+    width: 80px;
+    cursor: pointer;
+}
+
+.listBrief,.taskList{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    margin: 20px;
+}
+
+.briefCard{
+    border: 1px solid gray;
+    border-radius: 30px;
+    background-color: white;
+    text-align: left;
+    position: relative;
+    height: 409px;
+
+}
+
+.briefImage > img{
+    width: 297px;
+    border-radius: 29px 29px 0px 0px;
+
+}
+
+
+.contentCard{
+    padding: 5px;
+    max-width: 250px;
+    margin: 10px;
+}
+.titleBrief{
+    margin: 10px;
+    color: #2B3641;
+}
+
+.detailBrief{
+    margin-left: 20px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+    position: absolute;
+    bottom: 0px;
+    gap: 50px;
+    left: 30px;
+}
+
+.TachesButton{
+    border: 1px solid black;
+    background-color: white;
+    padding: 5px;
+    border-radius: 30px;
+    width: 80px;
+    cursor: pointer;
+}
+
+
+.nameBrief{
+    text-align: center;
+}
+
+
+.cardTask{
+    border: #2B3641 1px solid;
+    border-radius: 30px;
+    width: 18rem;
+    padding: 15px;
+    background-color: white;
+}
+
+.titleTask{
+    text-align: center;
+    color: #2B3641;
+    margin: 5px;
+}
+
+.taskNameContainer,.StartDateContainer,.endDateContainer{
+    display: flex;
+    gap: 20px;
+    color: #2B3641;
+    margin: 35px 5px;
+}
+
+.containerConsulterBrief{
+    padding: 40px 10rem;
+}
+
+.consulterBrief{
+    border: #2B3641 1px solid;
+    border-radius: 30px;
+    padding: 10px;
+    background-color: white;
+}
+
+.titleBrief{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.detailBrief{
+    max-width: 230px;
+}
+
+.dateBrief{
+    display: flex;
+    padding: 30px;
+}
+
+.dateBrief >div{
+    width: 50%;
+    display: flex;
+    gap: 30px;
+}

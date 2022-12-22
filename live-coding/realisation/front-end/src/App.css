@@ -1,0 +1,21 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+body{
+    scroll-behavior: smooth;
+    scroll-snap-type: proximity;
+}
+.container{
+    display: flex;
+}
+.rightcontaint{
+    flex: 4;
+    background-color: rgba(128, 128, 128, 0.096);
+    border-radius: 10px;
+    padding: 20px;
+}
